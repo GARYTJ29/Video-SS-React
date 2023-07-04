@@ -19,7 +19,7 @@ export default function App() {
     return {
       ratio,
       w,
-      h
+      h,
     };
   }
 
@@ -34,7 +34,7 @@ export default function App() {
         canvasRef.current.height = h;
         setDimensions({
           w: w,
-          h: h
+          h: h,
         });
       });
     }
@@ -54,6 +54,7 @@ export default function App() {
         controls
       />
       <canvas crossOrigin="anonymous" ref={canvasRef} />
+      <br />
       <button onClick={snap}>Take screenshot</button>
     </div>
   );
